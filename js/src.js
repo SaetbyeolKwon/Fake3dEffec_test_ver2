@@ -30,7 +30,6 @@ export default class Sketch {
     ];
     this.textures = [];
 
-
     this.startTime = new Date().getTime(); // Get start time for animating
 
     this.createScene();
