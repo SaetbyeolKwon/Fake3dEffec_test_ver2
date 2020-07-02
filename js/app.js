@@ -44,10 +44,8 @@ this.gyro()
 },
 {key:"touchMove",
     value:function(){var t=this;document.addEventListener("touchmove",
-        function(e){
-            var i=t.canvas.width/2,a=t.canvas.height/2;
-                t.mouseTargetX=(i-e.clientX)/i,
-                t.mouseTargetY=(a-e.clientY)/a
+        function(){
+            console.log("touchMoved.")
         })
     }
 },
