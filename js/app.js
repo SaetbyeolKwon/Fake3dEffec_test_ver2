@@ -49,7 +49,7 @@ this.gyro()
                 t.mouseTargetX=(i-e.clientX)/i,
                 t.mouseTargetY=(a-e.clientY)/a
 
-            console.log('i= '+i+", a= " +a+", "+"/n"+"e.clientX= "+e.clientX+" e.clientY= "+e.clientX);
+            console.log('i= '+i+", a= " +a+", "+"e.clientX= "+e.clientX+" e.clientY= "+e.clientX+", mouseTargetX= "+mouseTargetX);
         })
     }
 },
