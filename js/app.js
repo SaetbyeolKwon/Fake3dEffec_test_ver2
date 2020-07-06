@@ -48,6 +48,8 @@ this.gyro()
             var i=t.canvas.width/4,a=t.canvas.height/4;
                 t.mouseTargetX=(i-e.clientX)/i,
                 t.mouseTargetY=(a-e.clientY)/a
+
+            console.log('i= '+i+", a= " +a+", "+"/n"+"e.clientX= "+e.clientX+" e.clientY= "+e.clientX);
         })
     }
 },
