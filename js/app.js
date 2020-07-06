@@ -45,13 +45,11 @@ this.gyro()
 {key:"touchMove",
     value:function(){var t=this;document.addEventListener("touchmove",
         function(e){
-            xPos = e.clientX;
-            yPos = e.clientY;
             var i=t.canvas.width/2,a=t.canvas.height/2;
                 t.mouseTargetX=(i-e.touches[0].clientX)/i,
                 t.mouseTargetY=(a-e.touches[0].clientY)/a
 
-            console.log('i= '+i+", a= " +a+", "+"e.clientX= "+e.clientX+" e.clientY= "+e.clientX+", mouseTargetX= "+mouseTargetX);
+            console.log('i= '+i+", a= " +a+", "+"e.clientX= "+e.touches[0].clientX+" e.clientY= "+e.touches[0].clientY);
         })
     }
 },
