@@ -48,8 +48,6 @@ this.gyro()
             var i=t.canvas.width/2,a=t.canvas.height/2;
                 t.mouseTargetX=(i-e.touches[0].clientX)/i,
                 t.mouseTargetY=(a-e.touches[0].clientY)/a
-
-            console.log('i= '+i+", a= " +a+", e.clientX= "+e.touches[0].clientX+" e.clientY= "+e.touches[0].clientY);
         })
     }
 },

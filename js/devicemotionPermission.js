@@ -1,6 +1,7 @@
 DeviceMotionEvent.requestPermission()
 .then(response => {
   if (response == 'granted') {
+    console.log("permission granted");
     window.addEventListener('devicemotion', (e) => {
         console.log("permission granted");
     })
