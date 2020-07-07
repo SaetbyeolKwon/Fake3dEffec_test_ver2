@@ -1,20 +1,31 @@
-DeviceMotionEvent.requestPermission()
-.then(response => {
-  if (response == 'granted') {
-    console.log("permission granted");
-    window.addEventListener('devicemotion', (e) => {
-        console.log("permission granted");
-    })
+function onClick() {
+    // feature detect
+    if (typeof DeviceMotionEvent.requestPermission === 'function') {
+      DeviceMotionEvent.requestPermission()
+        .then(permissionState => {
+          if (permissionState === 'granted') {
+            window.addEventListener('devicemotion', () => {});
+          }
+        })
+        .catch(console.error);
+    } else {
+      // handle regular non iOS 13+ devices
+    }
   }
-})
-.catch(console.error)
 
-DeviceOrientationEvent.requestPermission()
-.then(response => {
-  if (response == 'granted') {
-    window.addEventListener('deviceorientation', (e) => {
-        console.log("permission granted")
-    })
+function onClick() {
+    // feature detect
+    if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+      DeviceOrientationEvent.requestPermission()
+        .then(permissionState => {
+          if (permissionState === 'granted') {
+            window.addEventListener('deviceorientation', (e) => {
+                console.log("permission granted");
+            });
+          }
+        })
+        .catch(console.error);
+    } else {
+      // handle regular non iOS 13+ devices
+    }
   }
-})
-.catch(console.error)
