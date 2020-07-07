@@ -4,7 +4,9 @@ function onClick() {
       DeviceMotionEvent.requestPermission()
         .then(permissionState => {
           if (permissionState === 'granted') {
-            window.addEventListener('devicemotion', () => {});
+            console.log("Mpermission granted");
+            window.addEventListener('devicemotion', (e) => {
+            });
           }
         })
         .catch(console.error);
@@ -19,8 +21,8 @@ function onClick() {
       DeviceOrientationEvent.requestPermission()
         .then(permissionState => {
           if (permissionState === 'granted') {
+            console.log("OTpermission granted");
             window.addEventListener('deviceorientation', (e) => {
-                console.log("permission granted");
             });
           }
         })
