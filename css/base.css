@@ -218,6 +218,7 @@ a:focus {
 	text-align: right;
 }
 
+/*
 @media screen and (max-width: 53em) {
 	.message {
 		display: none;
@@ -243,7 +244,7 @@ a:focus {
 	}
 
 	canvas{
-		/* padding: 20px; */
+		//padding: 20px;
 	}
 
 	.frame__title-wrap {
@@ -297,3 +298,4 @@ a:focus {
 		color: white;
 	}
 }
+*/
