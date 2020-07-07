@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Fake 3D Effect with WebGL</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+	</head>
+	<body>
+		<main>
+			<div class="frame">
+				<div 
+					id="gl1" 
+					data-imageOriginal="img/SO_Vodka_04.jpg" 
+					data-imageDepth="img/SO_Vodka_04_map18.png" 
+					data-horizontalThreshold="30" 
+					data-verticalThreshold="15">
+                </div>
+                <div 
+					id="gl2" 
+					data-imageOriginal="img/SO_Vodka_04.jpg" 
+					data-imageDepth="img/SO_Vodka_04_map18.png" 
+					data-horizontalThreshold="30" 
+					data-verticalThreshold="15">
+                </div>
+                <div 
+					id="gl3" 
+					data-imageOriginal="img/SO_Vodka_04.jpg" 
+					data-imageDepth="img/SO_Vodka_04_map18.png" 
+					data-horizontalThreshold="30" 
+					data-verticalThreshold="15">
+                </div>
+                <div 
+					id="gl4" 
+					data-imageOriginal="img/SO_Vodka_04.jpg" 
+					data-imageDepth="img/SO_Vodka_04_map18.png" 
+					data-horizontalThreshold="30" 
+					data-verticalThreshold="15">
+				</div>
+				<div>
+					<!-- <button id="request">request</button> -->
+				</div>
+			</div>
+		</main>
+		<script src="js/app.js"></script>
+		<script src="js/devicemotionPermission.js"></script>
+	</body>
+</html>

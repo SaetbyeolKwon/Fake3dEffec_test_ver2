@@ -27,8 +27,8 @@ body {
 }
 
 #gl1, #gl2, #gl3, #gl4 {
-	width: 100vw;
-	height: 100vh;
+	width: 50vw;
+	height: 50vh;
 	margin: 0 auto;
 	position: Absolute ;
 }
@@ -38,7 +38,7 @@ body {
 	top: 0;
 }
 
-/* #gl2 {
+#gl2 {
 	left: 50vw;
 	top: 0;
 }
@@ -51,7 +51,7 @@ body {
 #gl4 {
 	left: 50vw;
 	top: 50vh;
-} */
+}
 
 canvas {
 	/* padding: 50px; */
@@ -218,8 +218,39 @@ a:focus {
 	text-align: right;
 }
 
-/*
+
 @media screen and (max-width: 53em) {
+
+	#gl1, #gl2, #gl3, #gl4 {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	#gl1 {
+		left: 0;
+		top: 0;
+	}
+	
+	#gl2 {
+		left: 0vw;
+		top: 100vh;
+	}
+	
+	#gl3 {
+		left: 0vw;
+		top: 200vh;
+	}
+	
+	#gl4 {
+		left: 0vw;
+		top: 300vh;
+	}
+	
+	canvas{
+		padding: 50px 0;
+	}
+
+	/*
 	.message {
 		display: none;
 	}
@@ -297,5 +328,5 @@ a:focus {
 	.aw {
 		color: white;
 	}
+	*/
 }
-*/
