@@ -2,6 +2,7 @@ if ( location.protocol != "https:" ) {
     location.href = "https:" + window.location.href.substring( window.location.protocol.length );
     }
 
+function permission () {
     if ( typeof( DeviceMotionEvent ) !== "undefined" && typeof( DeviceMotionEvent.requestPermission ) === "function" ) {
         // (optional) Do something before API request prompt.
         DeviceMotionEvent.requestPermission()
