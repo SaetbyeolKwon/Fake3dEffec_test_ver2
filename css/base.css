@@ -34,13 +34,13 @@ body {
 }
 
 #gl1 {
-	left: 0;
-	top: 0;
+	left: 0vw;
+	top: 0vh;
 }
 
 #gl2 {
-	left: 100vw;
-	top: 0;
+	left: 0vw;
+	top: 100vh;
 }
 
 #gl3 {
