@@ -27,8 +27,8 @@ body {
 }
 
 #gl1, #gl2, #gl3, #gl4 {
-	width: 50vw;
-	height: 50vh;
+	width: 100vw;
+	height: 100vh;
 	margin: 0 auto;
 	position: Absolute ;
 }
@@ -39,18 +39,18 @@ body {
 }
 
 #gl2 {
-	left: 50vw;
+	left: 100vw;
 	top: 0;
 }
 
 #gl3 {
 	left: 0vw;
-	top: 50vh;
+	top: 200vh;
 }
 
 #gl4 {
-	left: 50vw;
-	top: 50vh;
+	left: 0vw;
+	top: 300vh;
 }
 
 canvas {
