@@ -232,7 +232,7 @@ a:focus {
 
 	#gl1, #gl2, #gl3, #gl4 {
 		width: 100vw;
-		height: 100vh;
+		height: 50vh;
 	}
 
 	#gl1 {
@@ -242,17 +242,17 @@ a:focus {
 	
 	#gl2 {
 		left: 0vw;
-		top: 100vh;
+		top: 50vh;
 	}
 	
 	#gl3 {
 		left: 0vw;
-		top: 200vh;
+		top: 100vh;
 	}
 	
 	#gl4 {
 		left: 0vw;
-		top: 300vh;
+		top: 150vh;
 	}
 	
 	canvas{
