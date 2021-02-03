@@ -56,7 +56,7 @@ this.scroll()
     window.addEventListener("scroll", function(e) {
         var i = t.canvas.width/2, a = t.canvas.height/8;
             t.mouseTargetY=(a-this.pageYOffset)/a;
-            // console.log(this.pageYOffset);
+            console.log(document.pageYOffset);
     })
     // window.onscroll = function() {
     //     console.log(this.pageYOffset);
